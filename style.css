@@ -1,0 +1,187 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: rgb(71, 29, 69);
+    font-family: 'Roboto', sans-serif;
+
+   
+}
+
+ul {
+    list-style: none;
+    font-size: 30px;
+    font-style: italic;
+}
+
+a {
+    text-decoration: none;
+    font-weight: 700;
+}
+
+
+body {
+    background: url(./imagens/notebbok.jpg) no-repeat center center fixed; 
+    background-size: cover;
+    backdrop-filter: blur(10px);
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    box-shadow: 1px 1px 10px 1px rgb(228, 181, 221);
+    margin-bottom: 45px;
+
+}
+
+#logo img{
+    max-width: 82px;
+    max-height: 69px;
+}
+
+header ul {
+    display: flex;
+}
+
+header ul li {
+    padding:15px;
+    
+}
+
+header ul li a {
+    transition: 200ms;
+    
+}
+
+header ul li a:hover {
+    color: rgb(91, 48, 104);
+    text-decoration: underline;
+}
+
+.container {
+    text-align: center;
+    
+}
+
+.container .nome h1{
+    font-size: 60px;
+    color: rgb(108, 59, 110);
+}
+
+.container .nome h5{
+    font-size: 25px;
+    color: rgb(124, 81, 126);
+    
+}
+
+#arrow {
+    font-size: 35px;
+    cursor: pointer;
+    animation: pisque 1s steps(5, start) infinite;
+}
+
+@keyframes pisque {
+    to {
+        visibility: hidden;
+    }
+}
+
+#animation {
+    transition: 300ms;
+}
+
+.rotate{
+    transform: rotate(180deg);
+    transition: 300ms;
+    
+}
+
+.active {
+    display: block !important;
+    
+}
+
+#about p {
+    max-width: 600px;
+    margin: 0 auto;
+    background: rgba(76, 46, 82, 0.7);
+    padding: 10px 25px;
+    font-weight: bolder;
+    color: rgb(221, 195, 226);
+    
+}
+
+.form{
+    width: 40%;
+    margin: 0 auto;
+    margin-top: 35px;
+    
+}
+
+.form p{
+    font-size: 18px;
+    font-weight: bolder;
+    color: rgb(124, 81, 126);
+}
+
+.form input {
+    width: 50%;
+    padding: 5px 10PX;
+    border: none;
+    border-radius: 5px 0px 0px 5px;
+}
+
+.form button {
+    width: 15%;
+    padding: 5px 10px;
+    background: linear-gradient( to right, rgb(198, 144, 214) 50%, rgb(159, 83, 182) 50%);
+    background-size: 200% 100%;
+    background-position:right bottom;
+    color: white;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: all 200ms ease-out;
+    border-radius: 0px 5px 5px 0px;
+    margin-top: 20px;
+    margin-left: -5px;
+}
+
+.form button:hover {
+    background-position: left bottom;
+}
+
+@media only screen and (max-width:768px) {
+    .form{
+        width: 100%;
+    }
+
+}
+
+@media only screen and (max-width:480px) {
+
+    header{
+        flex-direction: column;
+    }
+
+    header ul li {
+        font-size: 20px;
+        
+    }
+
+    .container .nome h1{
+        font-size: 25px;
+    }
+    
+    .container .nome h5{
+        font-size: 15px;
+    }
+    
+    #about p {
+        max-width: 80%;
+        text-align: justify;
+    }
+    
+}

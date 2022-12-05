@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" 
+    crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100;1,300;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Noemi Oliveira Jacintho</title>
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <img src="imagens/simbolo.png" alt="logo">
+        </div>
+        <ul>
+            <li>
+               <a target="_blank" href="https://github.com/njacintho">Github</a> 
+            </li>
+            <li>
+                <a target="_blank" href="https://www.linkedin.com/in/noemi-oliveira-jacintho/">Linkedin</a> 
+            </li>
+            <li>
+                <a target="_blank" href="https://wa.me/+5511941714897">WhatsApp</a> 
+            </li>
+        </ul>
+    </header>
+    <main>
+        <section class="container">
+            <div class="nome">
+                <h1>Noemi Oliveira Jacintho</h1>
+                <h5>Desenvolvedora de software</h5>
+            </div>
+            <div onclick="displyabout()" id="arrow">
+                <i id="animation" class="fas fa-sort-down"></i>
+            </div>
+            <div style="display: none;" id="about">
+                <p>
+                    Sou estudante em Análise e Desenvolvimento de Sistemas na Faculdade Impacta 
+                    e possuo 7 anos de experiência na área de manutenção como tecnóloga em automação industrial,
+                     no momento estou em transição de carreira para a área de programação,
+                      tenho me atualizado realizando boot camps pertinente a área assim como cursos 
+                      e treinamento, em javascript, HTML, CSS, Python, Kotlin bancos de dados e frameworks.
+                </p>
+            </div>
+            <div class="form">
+                <div>
+                    <p>Deixe seu contato</p>
+                </div>
+                <form action="">
+                    <input type="text" placeholder="Digite seu email">
+                    <button>Enviar</button>
+                </form>
+            </div>
+
+        </section>
+    </main>
+   
+    <script>
+        function displyabout() {
+            var arrow = document.getElementById('animation');
+            arrow.classList.toggle('rotate');   
+            var display = document.getElementById('about');
+            display.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
